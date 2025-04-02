@@ -1,5 +1,5 @@
 """
-Points to analyse:
+Points to analyse - as suggested by ChatGPT:
     - Who are the most consistent high earners?
     
     - Which athlete has the highest cumulative earnings across all years?
