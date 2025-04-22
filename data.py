@@ -10,12 +10,14 @@ class DataHandler:
         
         
     def format_data(self):
-        
         self.df = self.df.drop('S.NO', axis=1) # removing seemingly meaningless column
         
         for col in self.df.select_dtypes(include=['object']).columns:
             self.df[col] = self.df[col].apply(DataHandler.to_title)
             
+        self.df['Nationality'] = self.df['Nationality'].str.upper()
+        self.df['Sport'] = self.df['Sport'].str.upper()
+        
             
     @staticmethod    
     def to_title(text):
